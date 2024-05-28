@@ -6,15 +6,15 @@ i18niwatoko ist ein KI-Tool, das Übersetzungen von jeder Sprache in jede andere
 
 Wir streben eine Welt an, in der jeder Programmieren genießen kann, indem wir Sprachbarrieren überwinden.
 
-i18niwatoko ist ein innovatives Tool, das sich den Herausforderungen der mehrsprachigen Übersetzung stellt. Herkömmliche mehrsprachige Übersetzungstools erfordern den Umgang mit Programmiersprachen, die auf Englisch basieren, was für Nicht-Muttersprachler eine hohe Hürde darstellt.
+i18niwatoko ist ein innovatives Tool, das sich den Herausforderungen der mehrsprachigen Übersetzung stellt. Bisherige mehrsprachige Übersetzungstools erforderten den Umgang mit Programmiersprachen, die auf Englisch basieren, was für Nicht-Muttersprachler eine hohe Hürde darstellte.
 
-Aber i18niwatoko ist anders. Es ist eine Programmiersprache, mit der man natürliche Sprachen verwenden kann, sodass jeder in seiner Muttersprache programmieren kann. Darüber hinaus bietet i18niwatoko die Funktion, japanische Nachrichtendateien automatisch in mehrere Sprachen zu übersetzen. Dadurch wird manuelle Übersetzung überflüssig, und mehrsprachige Unterstützung kann effizient umgesetzt werden.
+Aber i18niwatoko ist anders. Es ist eine Programmiersprache, mit der man Systeme in natürlicher Sprache betreiben kann, sodass jeder in seiner Muttersprache programmieren kann. Darüber hinaus bietet i18niwatoko die Funktion, Japanisch-Sprachdateien automatisch in mehrere Sprachen zu übersetzen. Dadurch wird manuelle Übersetzung überflüssig, und mehrsprachige Unterstützung kann effizient umgesetzt werden.
 
-Programmieren ist nicht nur etwas für eine begabte Minderheit. Indem wir Sprachbarrieren beseitigen, können Menschen auf der ganzen Welt die Freude und das Potenzial des Programmierens erleben. Das ist die erhabene Vision von i18niwatoko.
+Programmieren ist nicht nur etwas für eine begabte Minderheit. Indem wir Sprachbarrieren beseitigen, können Menschen auf der ganzen Welt die Freude und Möglichkeiten des Programmierens erleben. Das ist die erhabene Vision von i18niwatoko.
 
-Lassen Sie uns gemeinsam mit i18niwatoko die sprachliche Vielfalt respektieren und die Kraft der Technologie nutzen, um Menschen miteinander zu verbinden. Durch Programmierung können Menschen auf der ganzen Welt ihre Kreativität entfalten und neue Ideen hervorbringen.
+Lassen Sie uns gemeinsam mit i18niwatoko die sprachliche Vielfalt respektieren und die Kraft der Technologie nutzen, um Menschen miteinander zu verbinden. Durch Programmieren sollen Menschen auf der ganzen Welt ihre Kreativität entfalten und neue Ideen hervorbringen können.
 
-## Voraussetzungen
+## Erforderliche Komponenten
 
 - Python 3.x
 - niwatoko-Bibliothek
@@ -22,7 +22,7 @@ Lassen Sie uns gemeinsam mit i18niwatoko die sprachliche Vielfalt respektieren u
 - Anthropic Claude API
 - OpenAI API
 
-## Einrichtung
+## Setup
 
 1. Installieren Sie die niwatoko-Bibliothek.
 
@@ -57,8 +57,10 @@ Lassen Sie uns gemeinsam mit i18niwatoko die sprachliche Vielfalt respektieren u
    niwatoko def_translation.md -o exe_translation.py -m gemini-1.5-flash
    ```
 
-3. Nach Abschluss der Übersetzung werden die Nachrichtendateien für jede Sprache (`message.{language_code}.yml`) generiert.
+3. Nach Abschluss der Übersetzung werden die Sprachdateien für jede Sprache generiert.
 
 4. Die Datei `def_translation.md` ist die Anforderungsspezifikation. Bitte passen Sie diese Datei an, um die Details anzupassen.
 
 ## Übersetzungssprachen
+
+Dieses

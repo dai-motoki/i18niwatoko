@@ -1,27 +1,95 @@
-Here is the English translation of the provided Japanese text:
+# Multilingual Translation i18niwatoko
 
-en:
-  cli_description: "Abstract Language Package Manager Grimo"
-  subcommand_help: "Available Subcommands"
-  search_help: "Search for packages"
-  query_help: "Search query"
-  language_help: "Package language"
-  category_help: "Package category"
-  tags_help: "Package tags"
-  install_help: "Install a package"
-  package_help: "Package name"
-  version_help: "Package version"
-  force_help: "Force installation"
-  update_help: "Update a package"
-  uninstall_help: "Uninstall a package"
-  upload_help: "Upload a package"
-  package_path_help: "Package path"
-  found_packages: "%{count} packages found"
-  no_packages_found: "No packages found"
-  install_success: "Successfully installed %{package}"
-  install_error: "Installation error: %{error}"
-  update_success: "%{package} updated to version %{version}"
-  update_error: "Update error: %{error}"
-  already_up_to_date: "%{package} is already up-to-date"
-  uninstall_success: "Successfully uninstalled %{package}"
-  uninstall_error: "Uninstallation error: %{error}"
+i18niwatoko is an AI tool that can translate from any language to any language simultaneously.
+
+## The Philosophy of i18niwatoko
+
+Aiming for a world where anyone can enjoy programming by overcoming language barriers.
+
+i18niwatoko was born to tackle the challenges of multilingual translation. With traditional multilingual translation tools, users had to work with programming languages based on English, which posed a high barrier for non-English speakers.
+
+However, i18niwatoko is different. It is a programming language that can run systems in natural language, allowing anyone to write programs in their native language. Furthermore, i18niwatoko has the ability to automatically translate Japanese message files into multiple languages. This eliminates the need for manual translation, enabling efficient multilingual support.
+
+Programming is not just for a select few with special talents. By removing language barriers, we can enable people around the world to experience the joy and potential of programming. This is the noble philosophy of i18niwatoko.
+
+Together with i18niwatoko, let's respect the diversity of languages and connect people through the power of technology. Through programming, we can empower people worldwide to unleash their creativity and generate new ideas, realizing a society where everyone can thrive.
+
+## Requirements
+
+- Python 3.x
+- niwatoko library
+- GCP Vertex AI
+- Anthropic Claude API
+- OpenAI API
+
+## Setup
+
+1. Install the niwatoko library.
+
+   ```
+   pip install --upgrade niwatoko
+   ```
+
+2. Configure the settings for OpenAI, Anthropic, and GCP Vertex AI.
+
+   ```
+   # Set the OpenAI API key
+   # https://platform.openai.com/api-keys
+   export OPENAI_API_KEY=your_openai_api_key
+   
+   # Set the Anthropic API key
+   # https://console.anthropic.com/settings/keys
+   export ANTHROPIC_API_KEY=your_anthropic_api_key
+   
+   # Configure GCP Vertex AI
+   # Obtain the project ID and location from GCP Vertex AI. (If you forget, please contact Motoki X at https://x.com/ai_syacho)
+   export GEMINI_PROJECT=your_gcp_project_id
+   export GEMINI_LOCATION=asia-northeast1
+   ```
+
+## Usage
+
+1. Prepare the translation definition file (`def_translation.md`).
+
+2. Run the following command to start the translation. (gemini-1.5-flash is the stable version.)
+
+   ```
+   niwatoko def_translation.md -o exe_translation.py -m gemini-1.5-flash
+   ```
+
+3. Once the translation is complete, the message files for each language (`message.{language_code}.yml`) will be generated.
+
+4. The `def_translation.md` file is the requirements document. Please modify this file for detailed specifications.
+
+## Supported Languages
+
+This project supports translation to the following languages:
+
+- Bengali (bn)
+- Chinese (zh)
+- Danish (da)
+- German (de)
+- English (en)
+- Spanish (es)
+- Persian (fa)
+- Finnish (fi)
+- French (fr)
+- Hindi (hi)
+- Italian (it)
+- Korean (ko)
+- Dutch (nl)
+- Norwegian (no)
+- Polish (pl)
+- Portuguese (pt)
+- Russian (ru)
+- Swedish (sv)
+- Thai (th)
+- Turkish (tr)
+- Ukrainian (uk)
+- Vietnamese (vi)
+
+## Considerations
+
+- Translation may take some time.
+- Be mindful of API usage limits.
+- The translation results may not be perfect, so manual adjustments may be necessary.

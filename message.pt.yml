@@ -1,25 +1,80 @@
-pt:
-  cli_description: "Gerenciador de pacotes de linguagem abstrata Grimo"
-  subcommand_help: "Subcomandos disponíveis"
-  search_help: "Pesquisar por pacotes"
-  query_help: "Consulta de pesquisa"
-  language_help: "Idioma do pacote"
-  category_help: "Categoria do pacote"
-  tags_help: "Tags do pacote"
-  install_help: "Instalar um pacote"
-  package_help: "Nome do pacote"
-  version_help: "Versão do pacote"
-  force_help: "Forçar a instalação"
-  update_help: "Atualizar um pacote"
-  uninstall_help: "Desinstalar um pacote"
-  upload_help: "Enviar um pacote"
-  package_path_help: "Caminho do pacote"
-  found_packages: "%{count} pacotes encontrados"
-  no_packages_found: "Nenhum pacote encontrado"
-  install_success: "Instalação de %{package} bem-sucedida"
-  install_error: "Erro de instalação: %{error}"
-  update_success: "%{package} atualizado para a versão %{version}"
-  update_error: "Erro de atualização: %{error}"
-  already_up_to_date: "%{package} já está atualizado"
-  uninstall_success: "Desinstalação de %{package} bem-sucedida"
-  uninstall_error: "Erro de desinstalação: %{error}"
+# Tradução multilíngue i18niwatoko
+
+i18niwatoko é uma ferramenta de IA que traduz de qualquer idioma para qualquer idioma.
+
+## Filosofia do i18niwatoko
+
+Visando um mundo onde todos possam desfrutar da programação, superando a barreira do idioma.
+
+O i18niwatoko é uma ferramenta inovadora que enfrenta o desafio da tradução multilíngue. As ferramentas de tradução multilíngue tradicionais exigem que os usuários trabalhem com linguagens de programação baseadas no inglês, o que representa um obstáculo para as pessoas de países não anglófonos.
+
+No entanto, o i18niwatoko é diferente. É uma linguagem de programação que pode ser executada em linguagem natural, permitindo que qualquer pessoa escreva programas em seu idioma nativo. Além disso, o i18niwatoko possui a capacidade de traduzir automaticamente arquivos de mensagens em japonês para vários outros idiomas. Isso elimina a necessidade de tradução manual, tornando o suporte multilíngue mais eficiente.
+
+A programação não é apenas para uma elite com talentos especiais. Ao remover as barreiras linguísticas, o i18niwatoko visa permitir que pessoas de todo o mundo experimentem a alegria e o potencial da programação.
+
+Juntos com o i18niwatoko, vamos respeitar a diversidade de idiomas e usar o poder da tecnologia para conectar as pessoas. Através da programação, vamos permitir que as pessoas de todo o mundo expressem sua criatividade e gerem novas ideias, realizando uma sociedade onde todos possam prosperar.
+
+## Requisitos
+
+- Python 3.x
+- Biblioteca niwatoko
+- GCP Vertex AI
+- API Anthropic Claude
+- API OpenAI
+
+## Configuração
+
+1. Instale a biblioteca niwatoko.
+
+   ```
+   pip install --upgrade niwatoko
+   ```
+
+2. Configure a API OpenAI, Anthropic e GCP Vertex AI.
+
+   ```
+   # Definir a chave da API OpenAI
+   # https://platform.openai.com/api-keys
+   export OPENAI_API_KEY=sua_chave_api_openai
+   
+   # Definir a chave da API Anthropic
+   # https://console.anthropic.com/settings/keys
+   export ANTHROPIC_API_KEY=sua_chave_api_anthropic
+   
+   # Configurar o GCP Vertex AI
+   # Obtenha o ID do projeto e a localização do GCP Vertex AI (se você não souber, entre em contato com Motoki X em https://x.com/ai_syacho)
+   export GEMINI_PROJECT=seu_id_projeto_gcp
+   export GEMINI_LOCATION=asia-northeast1
+   ```
+
+## Uso
+
+1. Prepare o arquivo de definição de tradução (`def_translation.md`).
+
+2. Execute o seguinte comando para iniciar a tradução. (gemini-1.5-flash é a versão mais estável.)
+
+   ```
+   niwatoko def_translation.md -o exe_translation.py -m gemini-1.5-flash
+   ```
+
+3. Quando a tradução for concluída, os arquivos de mensagem em cada idioma (`message.{language_code}.yml`) serão gerados.
+
+4. O arquivo def_translation.md é a especificação de requisitos. Modifique-o conforme necessário.
+
+## Idiomas de tradução
+
+Este projeto traduz para os seguintes idiomas:
+
+- Bengalês (bn)
+- Chinês (zh)
+- Dinamarquês (da)
+- Alemão (de)
+- Inglês (en)
+- Espanhol (es)
+- Persa (fa)
+- Finlandês (fi)
+- Francês (fr)
+- Hindi (hi)
+- Italiano (it)
+- Coreano (ko)
+- Holandês (nl

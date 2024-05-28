@@ -1,92 +1,42 @@
-import anthropic
 import os
+import anthropic
 from tqdm import tqdm
 
-# 翻訳言語集
-languages = {
-    "fr": "フランス語",
-    "de": "ドイツ語",
-    "en": "英語",
-    "es": "スペイン語",
-    "it": "イタリア語",
-    "pt": "ポルトガル語",
-    "ru": "ロシア語",
-    "zh": "中国語",
-    "ko": "韓国語",
-    "ar": "アラビア語",
-    "hi": "ヒンディー語",
-    "bn": "ベンガル語",
-    "fa": "ペルシャ語",
-    "tr": "トルコ語",
-    "vi": "ベトナム語",
-    "th": "タイ語",
-    "uk": "ウクライナ語",
-    "pl": "ポーランド語",
-    "nl": "オランダ語",
-    "sv": "スウェーデン語",
-    "no": "ノルウェー語",
-    "da": "デンマーク語",
-    "fi": "フィンランド語",
-}
+# 環境変数からAnthropic APIキーを取得
+anthropic_api_key = os.environ.get("ANTHROPIC_API_KEY")
 
-# 日本語ファイル
+# Anthropic APIクライアントの初期化
+client = anthropic.Anthropic(api_key=anthropic_api_key)
+
+# 日本語ファイルの内容
 japanese_content = """
-ja:
-  cli_description: "抽象言語 パッケージマネージャー Grimo"
-  subcommand_help: "利用可能なサブコマンド"
-  search_help: "パッケージを検索する"
-  query_help: "検索クエリ"
-  language_help: "パッケージの言語"
-  category_help: "パッケージのカテゴリ"
-  tags_help: "パッケージのタグ"
-  install_help: "パッケージをインストールする"
-  package_help: "パッケージ名"
-  version_help: "パッケージのバージョン"
-  force_help: "強制的にインストールする"
-  update_help: "パッケージをアップデートする"
-  uninstall_help: "パッケージをアンインストールする"
-  upload_help: "パッケージをアップロードする"
-  package_path_help: "パッケージのパス"
-  found_packages: "%{count}個のパッケージが見つかりました"
-  no_packages_found: "パッケージが見つかりませんでした"
-  install_success: "%{package}のインストールに成功しました"
-  install_error: "インストールエラー: %{error}"
-  update_success: "%{package}がバージョン%{version}にアップデートされました"
-  update_error: "アップデートエラー: %{error}"
-  already_up_to_date: "%{package}は既に最新です"
-  uninstall_success: "%{package}のアンインストールに成功しました"
-  uninstall_error: "アンインストールエラー: %{error}"
-"""
+# 多言語翻訳 i18niwatoko
 
-# Claude API キー
-client = anthropic.Anthropic(
-    api_key=os.environ.get("ANTHROPIC_API_KEY"),
-)
+i18niwatokoはあらゆる国の言語からあらゆる国の言語に一斉翻訳するAIツールです。
 
-# 翻訳モデル
-model = "claude-3-haiku-20240307"
 
-# 翻訳実行
-for i, (language_code, language_name) in enumerate(tqdm(languages.items(), desc="翻訳中", unit="言語", bar_format="{desc}: {percentage:3.0f}%|{bar}| {n_fmt}/{total_fmt} [{elapsed}<{remaining}, {rate_fmt}{postfix}]")):
-    # 翻訳リクエスト
-    messages = [
-        {
-            "role": "user",
-            "content": f"{japanese_content}を{language_name}で翻訳"
-        }
-    ]
-    message = client.messages.create(
-        model=model,
-        max_tokens=1000,
-        temperature=0,
-        messages=messages
-    )
+## i18niwatokoの理念
 
-    # 翻訳結果取得
-    translated_text = message.content[0].text
+言語の壁を越えて、誰もがプログラミングを楽しめる世界を目指して。
 
-    # 翻訳結果をファイルに出力
-    with open(f"message.{language_code}.yml", "w", encoding="utf-8", errors="ignore") as f:
-        f.write(translated_text)
+i18niwatokoは、多言語翻訳の課題に立ち向かうために生まれた革新的なツールです。従来の多言語翻訳ツールでは、英語をベースとしたプログラミング言語を扱う必要があり、非英語圏の人々にとってハードルが高いという問題がありました。
 
-    print(f"{language_name}翻訳完了")
+しかし、i18niwatokoは違います。自然言語でシステムを動かすことができるプログラミング言語であり、誰もが母国語でプログラムを書くことができるのです。さらに、i18niwatokoは日本語のメッセージファイルを一括で複数の言語に自動翻訳する機能を備えています。これにより、手作業での翻訳が不要となり、効率的に多言語対応を行うことができます。
+
+プログラミングは特別な才能を持った一部の人だけのものではありません。言語の壁を取り払い、世界中の人々がプログラミングの楽しさと可能性を体験できる。それがi18niwatokoの崇高な理念なのです。
+
+i18niwatokoとともに、言語の多様性を尊重しながら、テクノロジーの力で人々をつなげていきましょう。プログラミングを通じて、世界中の人々が創造性を発揮し、新しいアイデアを生み出せる社会を実現するために。
+
+## 必要なもの
+
+- Python 3.x
+- niwatoko ライブラリ
+- GCP Vertex AI
+- Anthropic Claude API
+- OpenAI API
+
+## セットアップ
+
+1. niwatoko ライブラリをインストールします。
+
+   

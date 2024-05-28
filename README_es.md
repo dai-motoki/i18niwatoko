@@ -4,15 +4,15 @@ i18niwatoko es una herramienta de IA que traduce de cualquier idioma a cualquier
 
 ## Filosofía de i18niwatoko
 
-Con el objetivo de superar las barreras lingüísticas y permitir que todos disfruten de la programación.
+Aspiramos a un mundo donde todos puedan disfrutar de la programación, superando las barreras lingüísticas.
 
-i18niwatoko nació como una herramienta innovadora para abordar el desafío de la traducción multilingüe. Las herramientas de traducción multilingüe tradicionales requerían trabajar con lenguajes de programación basados en inglés, lo que suponía una barrera importante para las personas que no hablaban inglés.
+i18niwatoko nació para abordar el desafío de la traducción multilingüe. Las herramientas de traducción multilingüe tradicionales requerían trabajar con lenguajes de programación basados en inglés, lo que suponía una barrera importante para las personas de países no angloparlantes.
 
-Sin embargo, i18niwatoko es diferente. Es un lenguaje de programación que permite ejecutar sistemas en lenguaje natural, lo que permite a cualquier persona escribir programas en su idioma materno. Además, i18niwatoko cuenta con la funcionalidad de traducir automáticamente archivos de mensajes en japonés a múltiples idiomas. Esto elimina la necesidad de traducción manual y permite una adaptación multilingüe eficiente.
+Sin embargo, i18niwatoko es diferente. Es un lenguaje de programación que permite ejecutar sistemas en lenguaje natural, lo que permite a cualquiera escribir programas en su idioma materno. Además, i18niwatoko tiene la capacidad de traducir automáticamente archivos de mensajes en japonés a múltiples idiomas. Esto elimina la necesidad de traducción manual y permite una implementación eficiente de la compatibilidad multilingüe.
 
-La programación no es solo para unos pocos con talentos especiales. Eliminar las barreras lingüísticas y permitir que las personas de todo el mundo experimenten la alegría y el potencial de la programación. Esa es la noble filosofía de i18niwatoko.
+La programación no es solo para unos pocos con talentos especiales. Eliminando las barreras lingüísticas, queremos que las personas de todo el mundo puedan experimentar la alegría y el potencial de la programación. Esta es la noble filosofía de i18niwatoko.
 
-Junto con i18niwatoko, vamos a conectar a las personas de todo el mundo, respetando la diversidad lingüística y aprovechando el poder de la tecnología. Para hacer realidad una sociedad en la que las personas de todo el mundo puedan expresar su creatividad y generar nuevas ideas a través de la programación.
+Junto con i18niwatoko, respetemos la diversidad lingüística y utilicemos el poder de la tecnología para conectar a las personas. A través de la programación, permitamos que las personas de todo el mundo expresen su creatividad y generen nuevas ideas.
 
 ## Requisitos
 
@@ -57,7 +57,7 @@ Junto con i18niwatoko, vamos a conectar a las personas de todo el mundo, respeta
    niwatoko def_translation.md -o exe_translation.py -m gemini-1.5-flash
    ```
 
-3. Una vez completada la traducción, se generarán los archivos de mensaje en cada idioma (`message.{language_code}.yml`).
+3. Una vez completada la traducción, se generarán los archivos de mensajes en cada idioma.
 
 4. def_translation.md es el documento de especificación de requisitos. Modifícalo según sea necesario.
 
@@ -77,4 +77,7 @@ Este proyecto traduce a los siguientes idiomas:
 - Hindi (hi)
 - Italiano (it)
 - Coreano (ko)
-- Ho
+- Holandés (nl)
+- Noruego (no)
+- Polaco (pl)
+-
