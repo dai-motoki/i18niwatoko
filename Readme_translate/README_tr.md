@@ -1,18 +1,22 @@
-# Çok Dilli Çeviri i18niwatoko
+# Çok dilli çeviri i18niwatoko
 
-i18niwatoko, dünyanın her dilinden dünyanın her diline toplu çeviri yapabilen bir AI aracıdır.
+i18niwatoko, her ana dilden dünyanın her ülkesinin diline toplu çeviri yapabilen bir AI aracıdır.
+Ve burada bulunan tüm program dosyaları yalnızca kendi ana dillerinde yazılmış olup, hiçbir yüksek seviye dili yoktur, tamamen yeni bir program dosyasıdır.
 
-## i18niwatoko'nun Felsefesi
+![i18niwatoko](../readme_rich_progress.png)
 
-Dil engellerini aşarak, herkesin programlama yapmasını sağlamak.
 
-i18niwatoko, çok dilli çeviri sorunuyla mücadele etmek için doğmuş yenilikçi bir araçtır. Geleneksel çok dilli çeviri araçlarında, İngilizce tabanlı programlama dillerini kullanmak gerekiyordu ve bu, İngilizce konuşmayanlar için engel teşkil ediyordu.
+## i18niwatoko'nun felsefesi
 
-Ancak i18niwatoko farklıdır. Doğal dilde sistem çalıştırılabilen bir programlama dilidir ve herkes ana dilinde program yazabilir. Ayrıca i18niwatoko, Japonca mesaj dosyalarını toplu olarak birden fazla dile otomatik olarak çeviren bir işleve sahiptir. Bu sayede, elle çeviri yapmaya gerek kalmaz ve çok dilli desteği verimli bir şekilde sağlanabilir.
+Dil engellerini aşarak, herkesin programlama yapmasının keyfini çıkarabileceği bir dünya için.
 
-Programlama, özel yeteneklere sahip bir azınlığın işi değildir. Dil engellerini kaldırarak, dünyadaki herkesin programlamanın keyfini ve potansiyelini deneyimlemesini sağlamak, i18niwatoko'nun yüce amacıdır.
+i18niwatoko, çok dilli çeviri sorunuyla mücadele etmek için doğmuş yenilikçi bir araçtır. Geleneksel çok dilli çeviri araçlarında, İngilizce tabanlı programlama dillerini kullanmak gerekiyordu ve bu, İngilizce konuşmayan insanlar için engel teşkil ediyordu.
 
-i18niwatoko ile birlikte, dil çeşitliliğine saygı göstererek, teknolojinin gücüyle insanları birbirine bağlayalım. Programlama yoluyla, dünyadaki herkesin yaratıcılığını sergileyebileceği ve yeni fikirler üretebileceği bir toplumu gerçekleştirmek için.
+Ancak i18niwatoko farklı. Doğal dille sistem çalıştırılabilen bir programlama dilidir ve herkes ana dilinde program yazabilir. Ayrıca i18niwatoko, Japonca mesaj dosyalarını toplu olarak birden fazla dile otomatik olarak çeviren bir işleve sahiptir. Bu sayede, elle çeviri yapmaya gerek kalmaz ve verimli bir şekilde çok dilli desteği sağlanabilir.
+
+Programlama, özel yeteneklere sahip bir azınlığın işi değildir. Dil engellerini kaldırarak, dünyadaki herkesin programlamanın keyfini ve potansiyelini deneyimleyebilmesi. İşte i18niwatoko'nun yüce felsefesi budur.
+
+i18niwatoko ile birlikte, dil çeşitliliğine saygı duyarak, programlama yoluyla dünyadaki herkesin yaratıcılığını ortaya çıkarıp, yeni fikirlerin doğmasını sağlayacak bir toplumu gerçekleştirmek için.
 
 ## Gereksinimler
 
@@ -41,22 +45,12 @@ i18niwatoko ile birlikte, dil çeşitliliğine saygı göstererek, teknolojinin 
    # https://console.anthropic.com/settings/keys
    export ANTHROPIC_API_KEY=your_anthropic_api_key
    
-   # GCP Vertex AI'ı ayarlayın
+   # GCP Vertex AI ayarlarını yapın
    # GCP Vertex AI'dan proje kimliğini ve konumu alın. (Unuttuysan Motoki X'e başvur https://x.com/ai_syacho)
    export GEMINI_PROJECT=your_gcp_project_id
    export GEMINI_LOCATION=asia-northeast1
    ```
-
-## Kullanım
-
-1. Çeviri tanım dosyası (`def_translation.md`) hazırlayın.
-
-2. Aşağıdaki komutu çalıştırarak çeviriye başlayın. (gemini-1.5-flash kararlıdır.)
-
-   ```
-   niwatoko def_translation.md -o exe_translation.py -m gemini-1.5-flash
-   ```
-
-3. Çeviri tamamlandığında, her dil için mesaj dosyaları oluşturulur.
-
-4. def_translation.md, gereksinimleri tanımlar. Ayrıntı
+   
+   <!-- Açıklama -->
+   <!-- OpenAI, Anthropic ve GCP Vertex AI API anahtarlarını ve proje ayarlarını ortam değişkenlerine ayarlıyoruz. -->
+   <!-- your_openai_api_key, your_anthropic_api_key, your_gcp_project_id değerlerini gerçek API ana

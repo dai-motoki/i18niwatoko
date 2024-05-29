@@ -1,18 +1,22 @@
 # Wielojęzyczne tłumaczenie i18niwatoko
 
-i18niwatoko to innowacyjne narzędzie AI, które umożliwia tłumaczenie z dowolnego języka na dowolny język.
+i18niwatoko to narzędzie AI, które jednocześnie tłumaczy z każdego języka macierzystego na wszystkie inne języki na świecie.
+A pliki programowe znajdujące się tutaj są napisane wyłącznie w ich własnych językach macierzystych, bez jakiegokolwiek wysokiego poziomu języka, to całkowicie nowe pliki programowe.
+
+![i18niwatoko](../readme_rich_progress.png)
+
 
 ## Filozofia i18niwatoko
 
-Dążenie do świata, w którym każdy może cieszyć się programowaniem, pokonując bariery językowe.
+Dążąc do świata, w którym każdy może cieszyć się programowaniem, pokonując bariery językowe.
 
-i18niwatoko powstało, aby zmierzyć się z wyzwaniami związanymi z wielojęzycznym tłumaczeniem. Tradycyjne narzędzia do tłumaczenia wielojęzykowego wymagały korzystania z języków programowania opartych na angielskim, co stanowiło barierę dla osób spoza kręgu języka angielskiego.
+i18niwatoko to innowacyjne narzędzie, które powstało, aby stawić czoła wyzwaniom związanym z tłumaczeniem wielojęzycznym. Tradycyjne narzędzia do tłumaczenia wielojęzycznego wymagały korzystania z języków programowania opartych na angielskim, co stanowiło dużą barierę dla osób spoza kręgu języka angielskiego.
 
-Jednak i18niwatoko jest inne. Jest to język programowania, który pozwala na działanie systemów w językach naturalnych, umożliwiając każdemu pisanie programów w swoim ojczystym języku. Ponadto i18niwatoko posiada funkcję automatycznego tłumaczenia plików z komunikatami w języku japońskim na wiele innych języków. Dzięki temu nie ma potrzeby ręcznego tłumaczenia, co pozwala na efektywne wdrażanie wielojęzyczności.
+Ale i18niwatoko jest inny. Jest to język programowania, który pozwala na uruchamianie systemów w językach naturalnych, dzięki czemu każdy może pisać programy w swoim języku ojczystym. Ponadto i18niwatoko posiada funkcję automatycznego tłumaczenia plików komunikatów w języku japońskim na wiele innych języków. Eliminuje to konieczność ręcznego tłumaczenia, umożliwiając efektywne wdrażanie wielojęzyczności.
 
-Programowanie nie jest domeną tylko wyjątkowych talentów. Usuwając bariery językowe, chcemy umożliwić ludziom na całym świecie doświadczenie radości i możliwości, jakie niesie ze sobą programowanie. To wzniosła idea przyświecająca i18niwatoko.
+Programowanie nie jest domeną tylko wyjątkowych talentów. Usuwając bariery językowe, umożliwiamy ludziom na całym świecie doświadczenie radości i możliwości programowania. To wzniosła idea i18niwatoko.
 
-Wraz z i18niwatoko, szanując różnorodność językową, łączmy ludzi za pomocą mocy technologii. Poprzez programowanie pozwólmy ludziom na całym świecie na wyrażanie kreatywności i generowanie nowych pomysłów, tworząc społeczeństwo, w którym wszyscy mogą się rozwijać.
+Wraz z i18niwatoko, szanując różnorodność językową, dążymy do stworzenia społeczeństwa, w którym ludzie na całym świecie mogą wykorzystywać swoją kreatywność i generować nowe pomysły poprzez programowanie.
 
 ## Wymagania
 
@@ -30,18 +34,18 @@ Wraz z i18niwatoko, szanując różnorodność językową, łączmy ludzi za pom
    pip install --upgrade niwatoko
    ```
 
-2. Skonfiguruj ustawienia dla OpenAI, Anthropic i GCP Vertex AI.
+2. Skonfiguruj ustawienia OpenAI, Anthropic i GCP Vertex AI.
 
    ```
-   # Ustaw klucz API OpenAI
+   # Ustawienie klucza API OpenAI
    # https://platform.openai.com/api-keys
    export OPENAI_API_KEY=your_openai_api_key
    
-   # Ustaw klucz API Anthropic
+   # Ustawienie klucza API Anthropic
    # https://console.anthropic.com/settings/keys
    export ANTHROPIC_API_KEY=your_anthropic_api_key
    
-   # Ustaw ustawienia GCP Vertex AI
+   # Ustawienia GCP Vertex AI
    # Pobierz identyfikator projektu i lokalizację z GCP Vertex AI (jeśli nie pamiętasz, skontaktuj się z Motoki X https://x.com/ai_syacho)
    export GEMINI_PROJECT=your_gcp_project_id
    export GEMINI_LOCATION=asia-northeast1
@@ -51,14 +55,5 @@ Wraz z i18niwatoko, szanując różnorodność językową, łączmy ludzi za pom
 
 1. Przygotuj plik definicji tłumaczenia (`def_translation.md`).
 
-2. Uruchom następujące polecenie, aby rozpocząć tłumaczenie. (gemini-1.5-flash jest stabilną wersją.)
-
-   ```
-   niwatoko def_translation.md -o exe_translation.py -m gemini-1.5-flash
-   ```
-
-3. Po zakończeniu tłumaczenia zostaną wygenerowane pliki z komunikatami w różnych językach.
-
-4. `def_translation.md` to plik specyfikacji wymagań. Możesz go edytować, aby dostosować szczegóły.
-
-##
+2. Uruchom następujące polecenie, aby rozpocząć tłumaczenie.
+* Gemini-1.5-flash jest stabilny, ale w zasadzie programy w języku naturalnym są w okresie przejściowym i generalnie niestabilne. Jeśli uruchomisz to 3 razy, prawdopodobnie będzie to

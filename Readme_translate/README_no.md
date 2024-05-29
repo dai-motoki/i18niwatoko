@@ -1,18 +1,22 @@
 # Flerspråklig oversettelse i18niwatoko
 
-i18niwatoko er et AI-verktøy som oversetter fra ethvert språk til ethvert språk.
+i18niwatoko er et AI-verktøy som oversetter fra ethvert morsmål til alle verdens språk samtidig.
+Og programfilene som finnes her er skrevet utelukkende på sine respektive morsmål, uten noe høynivåspråk i det hele tatt, en helt ny programfiltype.
 
-## Filosofien bak i18niwatoko
+![i18niwatoko](../readme_rich_progress.png)
 
-Målet er å skape en verden der alle kan nyte programmering, uavhengig av språkbarrierer.
 
-i18niwatoko er et innovativt verktøy som tar tak i utfordringene ved flerspråklig oversettelse. Tidligere flerspråklige oversettelsesverktøy krevde at man jobbet med programmeringsspråk basert på engelsk, noe som utgjorde en stor barriere for ikke-engelsktalende.
+## i18niwatokos filosofi
 
-Men i18niwatoko er annerledes. Det er et programmeringsspråk som lar deg kjøre systemer på naturlige språk, slik at alle kan programmere på morsmålet sitt. I tillegg har i18niwatoko en funksjon for automatisk oversettelse av japanske meldingsfiler til flere språk. Dette eliminerer behovet for manuell oversettelse og gjør det mulig å effektivt støtte flere språk.
+Med mål om en verden der alle kan nyte programmering uten språkbarrierer.
 
-Programmering er ikke bare for de få med spesielle talenter. Ved å fjerne språkbarrierer kan vi la mennesker over hele verden oppleve gleden og mulighetene ved programmering. Det er den høye ambisjonen til i18niwatoko.
+i18niwatoko er et innovativt verktøy som tar tak i utfordringene med flerspråklig oversettelse. Tradisjonelle flerspråklige oversettelsesverktøy krever at man håndterer programmeringsspråk basert på engelsk, noe som utgjør en stor barriere for ikke-engelsktalende.
 
-La oss sammen med i18niwatoko respektere språkmangfoldet og bruke teknologiens kraft til å knytte mennesker sammen. Gjennom programmering kan mennesker over hele verden utfolde sin kreativitet og skape nye ideer.
+Men i18niwatoko er annerledes. Det er et programmeringsspråk som lar deg kjøre systemer på naturlige språk, slik at alle kan skrive programmer på sitt morsmål. I tillegg har i18niwatoko en funksjon for automatisk oversettelse av japanske meldingsfiler til flere språk. Dette eliminerer behovet for manuell oversettelse og gjør det mulig å effektivt støtte flere språk.
+
+Programmering er ikke bare for de få med spesielle talenter. Ved å fjerne språkbarrierer kan vi la mennesker over hele verden oppleve gleden og mulighetene ved programmering. Det er i18niwatokos høye ideal.
+
+Sammen med i18niwatoko, la oss realisere et samfunn der mennesker over hele verden kan utfolde sin kreativitet og skape nye ideer gjennom programmering, samtidig som vi respekterer språkmangfoldet.
 
 ## Nødvendige komponenter
 
@@ -42,41 +46,21 @@ La oss sammen med i18niwatoko respektere språkmangfoldet og bruke teknologiens 
    export ANTHROPIC_API_KEY=your_anthropic_api_key
    
    # Konfigurer GCP Vertex AI
-   # Hent prosjekt-ID og plassering fra GCP Vertex AI (kontakt Motoki X hvis du er usikker https://x.com/ai_syacho)
+   # Hent prosjekt-ID og plassering fra GCP Vertex AI (hvis du glemmer det, kontakt Motoki X på https://x.com/ai_syacho)
    export GEMINI_PROJECT=your_gcp_project_id
    export GEMINI_LOCATION=asia-northeast1
    ```
 
 ## Bruk
 
-1. Forbered oversettelsesdefinisjonsfilen (`def_translation.md`).
+1. Klargjør oversettelsesdefinisjonsfilen (`def_translation.md`).
 
-2. Kjør følgende kommando for å starte oversettelsen. (gemini-1.5-flash er stabil.)
+2. Kjør følgende kommando for å starte oversettelsen.
+   *gemini-1.5-flash er stabil, men generelt sett er naturlige språkprogrammer i en overgangsperiode og grunnleggende ustabile. Prøv det 3 ganger, så bør det stort sett fungere.
+   *Forskning på AI-hallusinasjoner og naturlige språkprogrammers grammatikk pågår også, så stabiliteten vil gradvis øke. Hvis du vil kjøre det, anbefaler vi at du redigerer den mellomliggende Python-filen direkte.
 
    ```
    niwatoko def_translation.md -o exe_translation.py -m gemini-1.5-flash
    ```
 
-3. Når oversettelsen er ferdig, genereres meldingsfiler for hvert språk.
-
-4. def_translation.md er kravspesifikasjonen. Endre denne filen for å justere kravene.
-
-## Oversatte språk
-
-Prosjektet oversetter til følgende språk:
-
-- Bengali (bn)
-- Kinesisk (zh)
-- Dansk (da)
-- Tysk (de)
-- Engelsk (en)
-- Spansk (es)
-- Persisk (fa)
-- Finsk (fi)
-- Fransk (fr)
-- Hindi (hi)
-- Italiensk (it)
-- Koreansk (ko)
-- Nederlandsk (nl)
-- Norsk (no)
-- Polsk (pl)
+3. Når overs

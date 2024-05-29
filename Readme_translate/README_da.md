@@ -1,20 +1,24 @@
 # Flersproglig oversættelse i18niwatoko
 
-i18niwatoko er et AI-værktøj, der kan oversætte fra ethvert sprog til ethvert andet sprog.
+i18niwatoko er et AI-værktøj, der kan oversætte fra ethvert modersmål til alle verdens sprog.
+Og her er programfiler, der udelukkende er skrevet på deres respektive modersmål, uden brug af noget højniveau-sprog - helt nye programfiler.
 
-## i18niwatokoens filosofi
+![i18niwatoko](../readme_rich_progress.png)
+
+
+## i18niwatokos filosofi
 
 At overskride sprogbarrierer og gøre programmering tilgængelig for alle.
 
-i18niwatoko er et innovativt værktøj, der tager fat på udfordringerne ved flersproglig oversættelse. Tidligere flersproglige oversættelsesværktøjer krævede, at man arbejdede med programmeringssprog baseret på engelsk, hvilket udgjorde en barriere for ikke-engelsktalende.
+i18niwatoko er et innovativt værktøj, der tager fat på udfordringerne ved flersproglig oversættelse. Traditionelle flersproglige oversættelsesværktøjer kræver, at man arbejder med programmeringssprog baseret på engelsk, hvilket kan være en stor barriere for ikke-engelsktalende.
 
-Men i18niwatoko er anderledes. Det er et programmeringssprog, der kan køre på naturlige sprog, så alle kan programmere på deres modersmål. Derudover har i18niwatoko funktionalitet til at automatisk oversætte japanske beskedsfiler til flere sprog. Dette eliminerer behovet for manuel oversættelse og gør det muligt at implementere flersproget support på en effektiv måde.
+Men i18niwatoko er anderledes. Det er et programmeringssprog, der kører på naturlige sprog, så alle kan skrive programmer på deres modersmål. Derudover har i18niwatoko funktioner til at automatisk oversætte japanske beskedsfiler til flere sprog. Dette eliminerer behovet for manuel oversættelse og gør det muligt at opnå flersproget support på en effektiv måde.
 
-Programmering er ikke forbeholdt en særlig talentfuld elite. Ved at fjerne sprogbarrierer kan vi lade mennesker over hele verden opleve glæden og mulighederne ved programmering. Det er i18niwatokoens noble vision.
+Programmering er ikke kun for en særlig talentfuld elite. Ved at fjerne sprogbarrierer kan vi lade hele verden opleve glæden og mulighederne ved programmering. Det er i18niwatokos ophøjede vision.
 
-Lad os sammen med i18niwatoko respektere sproglig mangfoldighed og bruge teknologiens kraft til at forbinde mennesker. Lad os realisere et samfund, hvor mennesker over hele verden kan udfolde deres kreativitet og skabe nye idéer gennem programmering.
+Sammen med i18niwatoko kan vi skabe et samfund, hvor sproglig mangfoldighed respekteres, og hvor mennesker over hele verden kan udfolde deres kreativitet og skabe nye idéer gennem programmering.
 
-## Forudsætninger
+## Hvad du har brug for
 
 - Python 3.x
 - niwatoko-biblioteket
@@ -47,11 +51,13 @@ Lad os sammen med i18niwatoko respektere sproglig mangfoldighed og bruge teknolo
    export GEMINI_LOCATION=asia-northeast1
    ```
 
-## Brug
+## Sådan bruges det
 
 1. Forbered en oversættelsesdefinitionsfil (`def_translation.md`).
 
-2. Kør følgende kommando for at starte oversættelsen. (gemini-1.5-flash er stabil.)
+2. Kør følgende kommando for at starte oversættelsen.
+*gemini-1.5-flash er stabil, men naturlige sprogprogrammer er generelt i en overgangsperiode og derfor grundlæggende ustabile. Prøv det 3 gange, så burde det næsten sikkert virke.
+*Forskning i AI-hallucinationer og naturlige sprogprogrammer er også i gang, så stabiliteten vil gradvist forbedres. Hvis du gerne vil køre det, anbefaler vi, at du redigerer den mellemliggende Python-fil direkte.
 
    ```
    niwatoko def_translation.md -o exe_translation.py -m gemini-1.5-flash
@@ -59,26 +65,4 @@ Lad os sammen med i18niwatoko respektere sproglig mangfoldighed og bruge teknolo
 
 3. Når oversættelsen er færdig, genereres beskedsfiler for hvert sprog.
 
-4. def_translation.md er kravspecifikationen. Rediger denne fil for at ændre oversættelseskravene.
-
-## Oversatte sprog
-
-Projektet oversætter til følgende sprog:
-
-- Bengali (bn)
-- Kinesisk (zh)
-- Dansk (da)
-- Tysk (de)
-- Engelsk (en)
-- Spansk (es)
-- Persisk (fa)
-- Finsk (fi)
-- Fransk (fr)
-- Hindi (hi)
-- Italiensk (it)
-- Koreansk (ko)
-- Hollandsk (nl)
-- Norsk (no)
-- Polsk (pl)
-- Portugisisk (pt)
-- Russisk (ru)
+4. def_translation.md er kravspecifik

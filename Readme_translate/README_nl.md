@@ -1,20 +1,24 @@
 # Meertalige vertaling i18niwatoko
 
-i18niwatoko is een AI-tool die in staat is om automatisch te vertalen tussen alle talen ter wereld.
+i18niwatoko is een AI-tool die automatisch vertaalt naar alle talen vanuit elke moedertaal.
+En de programmabestanden die hier aanwezig zijn, zijn allemaal geschreven in slechts één moedertaal, zonder enige hogere programmeertaal. Het is een volledig nieuw programmabestand.
+
+![i18niwatoko](../readme_rich_progress.png)
+
 
 ## Filosofie van i18niwatoko
 
 Met als doel een wereld waarin iedereen kan genieten van programmeren, ongeacht de taalbarrière.
 
-i18niwatoko is een innovatieve tool die zich richt op de uitdaging van meertalige vertaling. Traditionele meertalige vertaaltools vereisen het gebruik van op Engels gebaseerde programmeertalen, wat een grote drempel vormt voor niet-Engelstaligen.
+i18niwatoko is een innovatief hulpmiddel dat de uitdaging van meertalige vertaling aanpakt. Traditionele meertalige vertaalhulpmiddelen vereisen het gebruik van op Engels gebaseerde programmeertalen, wat een drempel vormt voor niet-Engelstaligen.
 
-Maar i18niwatoko is anders. Het is een programmeertaal waarin natuurlijke taal kan worden gebruikt, waardoor iedereen in zijn of haar moedertaal kan programmeren. Bovendien heeft i18niwatoko de functie om Japanse berichtbestanden automatisch te vertalen naar meerdere talen. Hierdoor is handmatige vertaling niet meer nodig en kan meertalige ondersteuning efficiënt worden gerealiseerd.
+Maar i18niwatoko is anders. Het is een programmeertaal waarin natuurlijke taal kan worden gebruikt, zodat iedereen in zijn moedertaal kan programmeren. Bovendien heeft i18niwatoko de functie om Japanse berichtbestanden automatisch te vertalen naar meerdere talen. Hierdoor is handmatige vertaling niet meer nodig en kan meertalige ondersteuning efficiënt worden gerealiseerd.
 
-Programmeren is niet alleen voor een select groepje met bijzonder talent. Door taalbarrières weg te nemen, kunnen mensen over de hele wereld de vreugde en mogelijkheden van programmeren ervaren. Dat is de verheven filosofie van i18niwatoko.
+Programmeren is niet alleen voor een select groepje met bijzondere talenten. Door taalbarrières weg te nemen, kunnen mensen over de hele wereld de vreugde en mogelijkheden van programmeren ervaren. Dat is de verheven filosofie van i18niwatoko.
 
-Samen met i18niwatoko zullen we de diversiteit van talen respecteren en de kracht van technologie gebruiken om mensen met elkaar te verbinden. Door middel van programmeren kunnen mensen over de hele wereld hun creativiteit uiten en nieuwe ideeën genereren.
+Samen met i18niwatoko, met respect voor de diversiteit aan talen, willen we een samenleving realiseren waarin mensen over de hele wereld hun creativiteit kunnen ontplooien en nieuwe ideeën kunnen genereren via programmeren.
 
-## Vereisten
+## Benodigdheden
 
 - Python 3.x
 - niwatoko-bibliotheek
@@ -51,32 +55,12 @@ Samen met i18niwatoko zullen we de diversiteit van talen respecteren en de krach
 
 1. Maak het vertaaldefinitiebestand (`def_translation.md`) klaar.
 
-2. Voer de volgende opdracht uit om de vertaling te starten. (gemini-1.5-flash is stabiel.)
+2. Voer de volgende opdracht uit om de vertaling te starten.
+* gemini-1.5-flash is stabiel, maar natuurlijke taal programma's zijn in een overgangsfase en over het algemeen instabiel. Als u het drie keer uitvoert, zal het vrijwel zeker werken.
+* Onderzoek naar hallucinatie van AI en grammatica van natuurlijke taal programma's is ook gaande, dus de stabiliteit zal geleidelijk toenemen. Als u het wilt laten werken, raden we u aan om rechtstreeks te werken met het tussenliggende Python-bestand.
 
    ```
    niwatoko def_translation.md -o exe_translation.py -m gemini-1.5-flash
    ```
 
-3. Wanneer de vertaling is voltooid, worden de berichtbestanden voor elke taal gegenereerd.
-
-4. def_translation.md is het vereistendocument. Pas deze file aan als u de details wilt wijzigen.
-
-## Ondersteunde talen
-
-Dit project ondersteunt vertaling naar de volgende talen:
-
-- Bengaals (bn)
-- Chinees (zh)
-- Deens (da)
-- Duits (de)
-- Engels (en)
-- Engels (en)
-- Spaans (es)
-- Perzisch (fa)
-- Fins (fi)
-- Frans (fr)
-- Hindi (hi)
-- Italiaans (it)
-- Koreaans (ko)
-- Nederlands (nl)
-- Noors (no)
+3. Wann

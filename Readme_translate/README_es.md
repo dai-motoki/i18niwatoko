@@ -1,18 +1,22 @@
 # Traducción multilingüe i18niwatoko
 
-i18niwatoko es una herramienta de IA que traduce de cualquier idioma a cualquier idioma.
+i18niwatoko es una herramienta de IA que traduce simultáneamente de cualquier idioma nativo a todos los idiomas del mundo.
+Y los archivos de programa que se encuentran aquí están escritos únicamente en sus respectivos idiomas nativos, sin ningún lenguaje de alto nivel, son archivos de programa completamente nuevos.
 
-## Filosofía de i18niwatoko
+![i18niwatoko](../readme_rich_progress.png)
 
-Aspiramos a un mundo donde todos puedan disfrutar de la programación, superando las barreras lingüísticas.
 
-i18niwatoko nació para abordar el desafío de la traducción multilingüe. Las herramientas de traducción multilingüe tradicionales requerían trabajar con lenguajes de programación basados en inglés, lo que suponía una barrera importante para las personas de países no angloparlantes.
+## La filosofía de i18niwatoko
 
-Sin embargo, i18niwatoko es diferente. Es un lenguaje de programación que permite ejecutar sistemas en lenguaje natural, lo que permite a cualquiera escribir programas en su idioma materno. Además, i18niwatoko tiene la capacidad de traducir automáticamente archivos de mensajes en japonés a múltiples idiomas. Esto elimina la necesidad de traducción manual y permite una implementación eficiente de la compatibilidad multilingüe.
+Con el objetivo de crear un mundo donde todos puedan disfrutar de la programación, superando las barreras idiomáticas.
 
-La programación no es solo para unos pocos con talentos especiales. Eliminando las barreras lingüísticas, queremos que las personas de todo el mundo puedan experimentar la alegría y el potencial de la programación. Esta es la noble filosofía de i18niwatoko.
+i18niwatoko nació para abordar el desafío de la traducción multilingüe. Las herramientas de traducción multilingüe tradicionales requieren trabajar con lenguajes de programación basados en inglés, lo que supone una barrera importante para las personas que no hablan inglés.
 
-Junto con i18niwatoko, respetemos la diversidad lingüística y utilicemos el poder de la tecnología para conectar a las personas. A través de la programación, permitamos que las personas de todo el mundo expresen su creatividad y generen nuevas ideas.
+Pero i18niwatoko es diferente. Es un lenguaje de programación que permite ejecutar sistemas en lenguaje natural, lo que permite a cualquier persona escribir programas en su idioma nativo. Además, i18niwatoko cuenta con la función de traducir automáticamente archivos de mensajes en japonés a múltiples idiomas. Esto elimina la necesidad de traducción manual y permite una implementación multilingüe eficiente.
+
+La programación no es solo para unos pocos con talentos especiales. Eliminar las barreras idiomáticas y permitir que las personas de todo el mundo experimenten la alegría y el potencial de la programación. Esa es la noble filosofía de i18niwatoko.
+
+Junto con i18niwatoko, trabajaremos para crear una sociedad en la que se respete la diversidad lingüística y las personas de todo el mundo puedan desarrollar su creatividad y generar nuevas ideas a través de la programación.
 
 ## Requisitos
 
@@ -33,16 +37,16 @@ Junto con i18niwatoko, respetemos la diversidad lingüística y utilicemos el po
 2. Configura OpenAI, Anthropic y GCP Vertex AI.
 
    ```
-   # Establecer la clave de API de OpenAI
+   # Establecer la clave API de OpenAI
    # https://platform.openai.com/api-keys
    export OPENAI_API_KEY=your_openai_api_key
    
-   # Establecer la clave de API de Anthropic
+   # Establecer la clave API de Anthropic
    # https://console.anthropic.com/settings/keys
    export ANTHROPIC_API_KEY=your_anthropic_api_key
    
    # Configurar GCP Vertex AI
-   # Obtén el ID de proyecto y la ubicación de GCP Vertex AI. (Si no lo recuerdas, comunícate con Motoki X https://x.com/ai_syacho)
+   # Obtén el ID de proyecto y la ubicación de GCP Vertex AI. (Si no lo sabes, comunícate con Motoki X en https://x.com/ai_syacho)
    export GEMINI_PROJECT=your_gcp_project_id
    export GEMINI_LOCATION=asia-northeast1
    ```
@@ -51,7 +55,9 @@ Junto con i18niwatoko, respetemos la diversidad lingüística y utilicemos el po
 
 1. Prepara el archivo de definición de traducción (`def_translation.md`).
 
-2. Ejecuta el siguiente comando para iniciar la traducción. (gemini-1.5-flash es estable).
+2. Ejecuta el siguiente comando para iniciar la traducción.
+   * gemini-1.5-flash es estable, pero los programas en lenguaje natural son en general inestables durante el período de transición. Probablemente funcione después de ejecutarlo 3 veces.
+   * La alucinación de la IA y la investigación de la gramática de los programas en lenguaje natural también están en curso, por lo que la estabilidad irá aumentando gradualmente. Si quieres que funcione, te recomendamos que modifiques directamente el archivo Python intermedio.
 
    ```
    niwatoko def_translation.md -o exe_translation.py -m gemini-1.5-flash
@@ -59,25 +65,4 @@ Junto con i18niwatoko, respetemos la diversidad lingüística y utilicemos el po
 
 3. Una vez completada la traducción, se generarán los archivos de mensajes en cada idioma.
 
-4. def_translation.md es el documento de especificación de requisitos. Modifícalo según sea necesario.
-
-## Idiomas de traducción
-
-Este proyecto traduce a los siguientes idiomas:
-
-- Bengalí (bn)
-- Chino (zh)
-- Danés (da)
-- Alemán (de)
-- Inglés (en)
-- Español (es)
-- Persa (fa)
-- Finlandés (fi)
-- Francés (fr)
-- Hindi (hi)
-- Italiano (it)
-- Coreano (ko)
-- Holandés (nl)
-- Noruego (no)
-- Polaco (pl)
--
+4. def_

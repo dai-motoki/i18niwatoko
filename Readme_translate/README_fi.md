@@ -1,18 +1,22 @@
 # Monikielinen käännös i18niwatoko
 
-i18niwatoko on tekoälytyökalu, joka kääntää kaikilta kieliltä kaikille kielille.
+i18niwatoko on tekoälytyökalu, joka kääntää kaikkia maailman kieliä äidinkielestä toiseen.
+Tässä olevat ohjelmatiedostot on kirjoitettu vain äidinkielillä, eikä niissä ole lainkaan korkeamman tason ohjelmointikieliä. Tämä on täysin uusi ohjelmatiedostojen joukko.
 
-## i18niwatokon filosofia
+![i18niwatoko](../readme_rich_progress.png)
 
-Tavoitteena on maailma, jossa kaikki voivat nauttia ohjelmoinnista kielimuurin yli.
 
-i18niwatoko on innovatiivinen työkalu, joka ratkaisee monikielisen käännöksen haasteet. Perinteisissä monikielisissä käännöstyökaluissa on ollut ongelmana, että ne käsittelevät pääasiassa englanninkielisiä ohjelmointikieliä, mikä on asettanut esteen ei-englanninkielisille käyttäjille.
+## i18niwatoko:n filosofia
 
-i18niwatoko on kuitenkin erilainen. Se on luonnollisella kielellä toimiva ohjelmointikieli, jolla kaikki voivat kirjoittaa ohjelmia äidinkielellään. Lisäksi i18niwatokolla on toiminto, joka kääntää automaattisesti japaninkielisiä viestintiedostoja useille kielille. Tämä poistaa manuaalisen käännöstyön tarpeen ja mahdollistaa tehokkaan monikielisen tuen.
+Tavoitteena on maailma, jossa kaikki voivat nauttia ohjelmoinnista kielimuurien yli.
 
-Ohjelmointi ei ole vain tiettyjen lahjakkaiden ihmisten etuoikeus. Poistamalla kielimuurin, mahdollistamme sen, että kaikki ihmiset ympäri maailmaa voivat kokea ohjelmoinnin ilon ja mahdollisuudet. Tämä on i18niwatokon jalomielinen päämäärä.
+i18niwatoko on syntynyt ratkaisemaan monikielisen käännöksen haasteita. Perinteisissä monikielisissä käännöstyökaluissa on ollut ongelmana, että ne perustuvat englanninkielisiin ohjelmointikieliin, mikä on asettanut suuren esteen ei-englanninkielisille.
 
-Yhdessä i18niwatokon kanssa kunnioitamme kielellisen moninaisuuden arvoa ja käytämme teknologian voimaa yhdistääksemme ihmisiä. Tavoitteenamme on luoda yhteiskunta, jossa ihmiset voivat toteuttaa luovuuttaan ja synnyttää uusia ideoita ohjelmoinnin kautta.
+i18niwatoko on kuitenkin erilainen. Se on luonnollisella kielellä toimiva ohjelmointikieli, jolla kaikki voivat kirjoittaa ohjelmia äidinkielellään. Lisäksi i18niwatokossa on toiminto, joka kääntää automaattisesti japaninkieliset viestit useille eri kielille. Tämä poistaa tarpeen käännöstyöltä käsin ja mahdollistaa tehokkaan monikielisen toteutuksen.
+
+Ohjelmointi ei ole vain tiettyjen lahjakkaiden ihmisten etuoikeus. Poistamalla kielimuurit, i18niwatoko haluaa mahdollistaa, että kaikki ihmiset ympäri maailmaa voivat kokea ohjelmoinnin ilon ja mahdollisuudet.
+
+Yhdessä i18niwatoko:n kanssa voimme kunnioittaa kielellisen moninaisuuden arvoa ja toteuttaa yhteiskunnan, jossa ihmiset ympäri maailmaa voivat käyttää luovuuttaan ja synnyttää uusia ideoita ohjelmoinnin kautta.
 
 ## Tarvittavat komponentit
 
@@ -42,7 +46,7 @@ Yhdessä i18niwatokon kanssa kunnioitamme kielellisen moninaisuuden arvoa ja kä
    export ANTHROPIC_API_KEY=your_anthropic_api_key
    
    # Määritä GCP Vertex AI
-   # Hanki GCP Vertex AI -projektin ID ja sijainti (jos unohdat, ota yhteyttä Motokin X:ään https://x.com/ai_syacho)
+   # Hanki GCP Vertex AI -projektin ID ja sijainti. (Jos unohdat, ota yhteyttä Motoki X:ään https://x.com/ai_syacho)
    export GEMINI_PROJECT=your_gcp_project_id
    export GEMINI_LOCATION=asia-northeast1
    ```
@@ -51,12 +55,5 @@ Yhdessä i18niwatokon kanssa kunnioitamme kielellisen moninaisuuden arvoa ja kä
 
 1. Valmistele käännösmääritystiedosto (`def_translation.md`).
 
-2. Suorita seuraava komento käännöksen aloittamiseksi. (gemini-1.5-flash on vakaa versio.)
-
-   ```
-   niwatoko def_translation.md -o exe_translation.py -m gemini-1.5-flash
-   ```
-
-3. Kun käännös on valmis, kunkin kielen viestintiedostot luodaan.
-
-4
+2. Suorita seuraava komento käännöksen aloittamiseksi.
+   *gemini-1.5-flash on vakaa, mutta luonnollisen kielen oh

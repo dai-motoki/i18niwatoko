@@ -1,18 +1,22 @@
 # Mehrsprachige Übersetzung i18niwatoko
 
-i18niwatoko ist ein KI-Tool, das Übersetzungen von jeder Sprache in jede andere Sprache ermöglicht.
+i18niwatoko ist ein KI-Tool, das alle Sprachen der Welt aus jeder Muttersprache heraus übersetzt.
+Und hier sind alle Programmdateien nur in ihrer jeweiligen Muttersprache geschrieben, es gibt keine einzige Hochsprache, es sind völlig neue Programmdateien.
 
-## Die Vision von i18niwatoko
+![i18niwatoko](../readme_rich_progress.png)
 
-Wir streben eine Welt an, in der jeder Programmieren genießen kann, indem wir Sprachbarrieren überwinden.
 
-i18niwatoko ist ein innovatives Tool, das sich den Herausforderungen der mehrsprachigen Übersetzung stellt. Bisherige mehrsprachige Übersetzungstools erforderten den Umgang mit Programmiersprachen, die auf Englisch basieren, was für Nicht-Muttersprachler eine hohe Hürde darstellte.
+## Die Philosophie von i18niwatoko
 
-Aber i18niwatoko ist anders. Es ist eine Programmiersprache, mit der man Systeme in natürlicher Sprache betreiben kann, sodass jeder in seiner Muttersprache programmieren kann. Darüber hinaus bietet i18niwatoko die Funktion, Japanisch-Sprachdateien automatisch in mehrere Sprachen zu übersetzen. Dadurch wird manuelle Übersetzung überflüssig, und mehrsprachige Unterstützung kann effizient umgesetzt werden.
+Mit dem Ziel, die Sprachbarrieren zu überwinden und eine Welt zu schaffen, in der jeder Programmieren genießen kann.
 
-Programmieren ist nicht nur etwas für eine begabte Minderheit. Indem wir Sprachbarrieren beseitigen, können Menschen auf der ganzen Welt die Freude und Möglichkeiten des Programmierens erleben. Das ist die erhabene Vision von i18niwatoko.
+i18niwatoko ist ein innovatives Tool, das sich den Herausforderungen der mehrsprachigen Übersetzung stellt. Herkömmliche mehrsprachige Übersetzungstools erfordern den Umgang mit englischsprachigen Programmiersprachen, was für Nicht-Muttersprachler eine hohe Hürde darstellt.
 
-Lassen Sie uns gemeinsam mit i18niwatoko die sprachliche Vielfalt respektieren und die Kraft der Technologie nutzen, um Menschen miteinander zu verbinden. Durch Programmieren sollen Menschen auf der ganzen Welt ihre Kreativität entfalten und neue Ideen hervorbringen können.
+Aber i18niwatoko ist anders. Es ist eine Programmiersprache, mit der man natürliche Sprachen verwenden kann, so dass jeder in seiner Muttersprache programmieren kann. Darüber hinaus verfügt i18niwatoko über eine Funktion, mit der japanische Nachrichtendateien automatisch in mehrere Sprachen übersetzt werden können. Dadurch wird manuelle Übersetzung überflüssig, und mehrsprachige Unterstützung kann effizient umgesetzt werden.
+
+Programmieren ist nicht nur etwas für eine begabte Minderheit. Indem wir die Sprachbarrieren beseitigen, können Menschen auf der ganzen Welt die Freude und das Potenzial des Programmierens erleben. Das ist die erhabene Vision von i18niwatoko.
+
+Gemeinsam mit i18niwatoko wollen wir eine Welt schaffen, in der die sprachliche Vielfalt respektiert wird und Menschen durch Programmierung ihre Kreativität entfalten und neue Ideen entwickeln können.
 
 ## Erforderliche Komponenten
 
@@ -22,7 +26,7 @@ Lassen Sie uns gemeinsam mit i18niwatoko die sprachliche Vielfalt respektieren u
 - Anthropic Claude API
 - OpenAI API
 
-## Setup
+## Einrichtung
 
 1. Installieren Sie die niwatoko-Bibliothek.
 
@@ -33,34 +37,21 @@ Lassen Sie uns gemeinsam mit i18niwatoko die sprachliche Vielfalt respektieren u
 2. Konfigurieren Sie OpenAI, Anthropic und GCP Vertex AI.
 
    ```
-   # OpenAI-API-Schlüssel setzen
+   # Setzen Sie den OpenAI-API-Schlüssel
    # https://platform.openai.com/api-keys
    export OPENAI_API_KEY=your_openai_api_key
    
-   # Anthropic-API-Schlüssel setzen
+   # Setzen Sie den Anthropic-API-Schlüssel
    # https://console.anthropic.com/settings/keys
    export ANTHROPIC_API_KEY=your_anthropic_api_key
    
-   # GCP Vertex AI konfigurieren
-   # Holen Sie sich die Projekt-ID und den Standort von GCP Vertex AI. (Wenn Sie sich nicht sicher sind, kontaktieren Sie bitte Motoki X unter https://x.com/ai_syacho)
+   # Konfigurieren Sie GCP Vertex AI
+   # Holen Sie sich die Projekt-ID und den Standort von GCP Vertex AI. (Wenn Sie sich nicht sicher sind, wenden Sie sich an Motoki X unter https://x.com/ai_syacho)
    export GEMINI_PROJECT=your_gcp_project_id
    export GEMINI_LOCATION=asia-northeast1
    ```
-
-## Verwendung
-
-1. Erstellen Sie eine Übersetzungsdefinitionsdatei (`def_translation.md`).
-
-2. Führen Sie den folgenden Befehl aus, um die Übersetzung zu starten. (gemini-1.5-flash ist stabil.)
-
-   ```
-   niwatoko def_translation.md -o exe_translation.py -m gemini-1.5-flash
-   ```
-
-3. Nach Abschluss der Übersetzung werden die Sprachdateien für jede Sprache generiert.
-
-4. Die Datei `def_translation.md` ist die Anforderungsspezifikation. Bitte passen Sie diese Datei an, um die Details anzupassen.
-
-## Übersetzungssprachen
-
-Dieses
+   
+   <!-- Erklärung -->
+   <!-- Legen Sie die API-Schlüssel und Projekteinstellungen für OpenAI, Anthropic und GCP Vertex AI als Umgebungsvariablen fest. -->
+   <!-- Ersetzen Sie your_openai_api_key, your_anthropic_api_key und your_gcp_project_id durch Ihre tatsächlichen API-Schlüssel und Projekt-IDs. -->
+   <!-- GEMINI_LOCATION gibt die GCP Vertex AI-Region an. Hier wird die Region Asien-
