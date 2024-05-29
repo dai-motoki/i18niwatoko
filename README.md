@@ -3,7 +3,7 @@
 i18niwatokoはそれぞれの母国語からあらゆる国の言語に一斉翻訳するAIツールです。
 そしてここに存在するプログラムファイルは全て各々の母国語のみで書いてあり、高級言語は一切無い、全く新しいプログラムファイルです。
 
-![i18niwatoko](../readme_rich_progress.png)
+![i18niwatoko](./readme_rich_progress.png)
 
 
 ## i18niwatokoの理念
