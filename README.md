@@ -31,6 +31,8 @@ i18niwatokoでは自然言語でシステムを動かすことができるプロ
 1. niwatoko ライブラリをインストールします。
 
    ```
+   git clone https://github.com/dai-motoki/i18niwatoko
+   cd i18niwatoko
    pip install --upgrade niwatoko
    ```
 
